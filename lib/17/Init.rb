@@ -27,7 +27,7 @@ p cart.items
 
 puts "Add 3 new items and remove the last one -----------------------"
 
-item3 = Item.new(:weight => 6, :price => 40)
+item3 = Item.new(:weight => 6)
 item4 = Item.new(:weight => 7, :price => 50)
 item5 = Item.new(:weight => 8, :price => 60)
 cart.add_item(item3)
@@ -38,3 +38,5 @@ p cart.items
 
 cart.remove_nn(cart.items.length - 1)
 p cart.items
+
+cart.validate
