@@ -6,9 +6,7 @@ puts "-----------------------"
 
 
 
-item1 = Item.new()
-item1.price = 10
-item1.name = "Folk"
+item1 = Item.new(:name => "Folk", :price => 10)
 
 item2 = Item.new(:weight => 4, :price => 20)
 
