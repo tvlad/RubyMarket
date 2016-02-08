@@ -1,6 +1,6 @@
 class Item
 	
-	def initialize(options = {:weight => 1})
+	def initialize(options = {:name => "noname", :weight => 1})
 		@price = options[:price]
 		@weight = options[:weight]
     @name = options[:name]

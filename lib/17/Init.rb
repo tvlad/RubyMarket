@@ -15,12 +15,12 @@ cart.add_item(item1)
 
 p cart.items
 
-puts "-----------------------"
+puts "cart -----------------------"
 
 cart.add_item(item2)
 p cart.items
 
-puts "-----------------------"
+puts "cart after adding a new item -----------------------"
 
 cart.remove_item
 p cart.items

@@ -2,23 +2,25 @@ class Item
   
   @@discount = 0.1
 	
-	def initialize(options = {:name => "noname"})
+	def initialize(options = {})
 		@real_price = options[:price]
-		@name = options[:name]
-	end
-	
-	attr_reader :real_price, :name
-	
-	attr_writer :real_price
-	
-	#attr_accessor :price, :weight
-  
-  def info
-		#[price, weight, name]	
-		yield(name)
-    yield(price)
+    @name = options[:name]
+    
+    @name = "noname" if @name == nil
   end
 	
+  attr_reader :real_price, :name
+	
+  attr_writer :real_price
+	
+  #attr_accessor :price, :weight
+  
+  def info
+    #[price, weight, name]	
+    yield(name)
+    yield(price)
+  end
+  
   def self.discount
     if Time.now.month == 3
       @@discount += 0.3

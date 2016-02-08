@@ -1,8 +1,9 @@
 class RealItem < Item
   
   
-  def initialize(options = {:weight => 1})
+  def initialize(options = {})
     @weight = options[:weight]
+    @weight = 1 if @weight == nil
     super
   end
 	

@@ -27,3 +27,19 @@ puts my_data[:name]
 puts my_data[:fam_name]
 
 puts "-----------------------"
+
+hash = {:price => 100}
+item4 = Item.new(hash)
+
+
+p item4
+puts item4
+
+puts "-----------------------"
+
+hash2 = {:name => "Slave", :price => 100, :weight => 4}
+item5 = Item.new(hash2)
+
+
+p item5
+puts item5
