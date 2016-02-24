@@ -19,11 +19,11 @@ item5 = Item.new(:name => "Plate", :weight => 8, :price => 60)
 
 puts "asd " + "cvbb "
 
-item4.info {|attr| puts (item4_hash.key(attr).to_s + " - " + attr.to_s) }
+item4.info {|attr| puts(item4_hash.key(attr).to_s + " - " + attr.to_s) }
 
 puts "-----------------------"
 
-item1.info {|attr| puts (item4_hash.key(attr).to_s + " - " + attr.to_s) }
+item1.info {|attr| puts(item4_hash.key(attr).to_s + " - " + attr.to_s) }
 
 #item4_hash.each_key { |key| puts key }
 

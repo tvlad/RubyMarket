@@ -19,7 +19,7 @@ item4_hash = {:name => "Cup", :weight => 7, :price => 50}
 item4 = Item.new(item4_hash)
 item5 = Item.new(:name => "Plate", :weight => 8, :price => 60)
 
-item4.info {|attr| puts (item4_hash.key(attr).to_s + " - " + attr.to_s) }
+item4.info {|attr| puts(item4_hash.key(attr).to_s + " - " + attr.to_s) }
 
 puts "-----------------------"
 
