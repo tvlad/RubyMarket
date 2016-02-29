@@ -2,11 +2,11 @@ class Item
   
   @@discount = 0.1
 	
-	def initialize(name: "noname", price: 0)
-    @real_price = price
-    @name = name
+	def initialize(options = {})
+		@real_price = options[:price]
+    @name = options[:name]
     
-    # @name = "noname" if @name == nil
+    @name = "noname" if @name == nil
   end
 	
   attr_reader :real_price, :name
