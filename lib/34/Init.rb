@@ -29,9 +29,17 @@ cart = Cart.new("Roman")
 @items.each { |i| cart.add_item(i) }
 
 p cart.all_cars
-
+puts "-----------------------"
 p cart.all_folk
 
-#puts "-----------------------"
-#cart.items.each { |i| p i }
+puts "-----------------------"
+puts cart.kind_of?(Cart)
 
+puts "-----------------------"
+p @items[0]
+puts "price - " + @items[0].send(:price).to_s
+puts "real_price - " + @items[0].send(:real_price).to_s
+
+puts "-----------------------"
+puts "tax - " + @items[0].send(:tax).to_s
+puts "discount - " + @items[0].send(:discount).to_s
