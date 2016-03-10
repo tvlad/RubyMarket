@@ -9,6 +9,7 @@ require_relative "Order"
 item1 = RealItem.new(:name => "Folk", :weight => 4, :price => 100)
 item2 = RealItem.new(:price => 20)
 item3 = VirtualIem.new(:name => "Book", :price => 6)
+item4 = VirtualIem.new(:name => "mp3")
 
 puts "-----------------------"
 puts "Item.discount - " + Item.discount.to_s
@@ -38,5 +39,17 @@ puts "-----------------------"
 order.items.each {|key| p key}
 
 order.remove_item
-puts "each_key -----------------------"
+puts "after removing the last item -----------------------"
 order.items.each {|key| p key}
+
+order.add_item(item4)
+puts "\nafter adding a new item to order -----------------------"
+order.items.each {|key| p key}
+
+puts "\nValidate -----------------------"
+order.validate
+
+
+puts "\n-----------------------"
+puts order.count_valid_items
+

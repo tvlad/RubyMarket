@@ -6,11 +6,11 @@ require_relative "Cart"
 require_relative "Order"
 
 
-item1 = RealItem.new(:name => "Folk", :weight => 4, :price => 100)
-item2 = RealItem.new(:name => "Spoon", :price => 110)
-item3 = VirtualIem.new(:name => "Book", :price => 120)
-item4 = VirtualIem.new(:name => "mp3", :price => 80)
-item5 = VirtualIem.new(:name => "avi", :price => 60)
+item1 = RealItem.new(:name => "Folk", :weight => 4, :price => 180)
+item2 = RealItem.new(:name => "Spoon", :price => 300)
+item3 = VirtualIem.new(:name => "Book", :price => 250)
+item4 = VirtualIem.new(:name => "mp3", :price => 200)
+item5 = VirtualIem.new(:name => "avi", :price => 210)
 
 puts "-----------------------"
 
@@ -29,3 +29,5 @@ order.add_item(item3)
 order.add_item(item4)
 
 puts cart.items.size
+puts cart.items
+p cart.items

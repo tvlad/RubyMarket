@@ -1,14 +1,16 @@
 require "rspec"
 require_relative "../lib/43/Item"
+require_relative "../lib/43/item_container"
+require_relative "../lib/43/antique_item"
 require_relative "../lib/43/virtual_item"
 require_relative "../lib/43/Cart"
-require_relative "../lib/43/item_container"
+
 
 
 describe Cart do
   
   it "adds items into the cart" do
-    cart = Cart.new
+    cart = Cart.new("Roman")
     
     item1 = Item.new(:name => "Folk", :weight => 4, :price => 100)
     item2 = Item.new(:name => "Spoon", :weight => 6, :price => 150)
