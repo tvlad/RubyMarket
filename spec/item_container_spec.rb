@@ -53,5 +53,9 @@ describe Itemcontainer do
     expect(@box.items).to be_empty
   end
   
+  it "- inputtinf illegal data" do
+    expect{@box.add_item(some string)}.to raise_error(NameError)
+  end
+  
  
 end

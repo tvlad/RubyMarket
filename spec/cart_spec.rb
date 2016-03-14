@@ -9,16 +9,31 @@ require_relative "../lib/43/Cart"
 
 describe Cart do
   
-  it "adds items into the cart" do
-    cart = Cart.new("Roman")
+  describe "managing items" do
     
-    item1 = Item.new(:name => "Folk", :weight => 4, :price => 100)
-    item2 = Item.new(:name => "Spoon", :weight => 6, :price => 150)
-    item3 = Item.new(:name => "Book", :price => 80)
+    it "- adds items into the cart" do
+      cart = Cart.new("Roman")
     
-    cart.add_items(item1, item2, item3)
+      item1 = Item.new(:name => "Folk", :weight => 4, :price => 100)
+      item2 = Item.new(:name => "Spoon", :weight => 6, :price => 150)
+      item3 = Item.new(:name => "Book", :price => 80)
     
-    expect(cart.items).to include(item1, item2, item3) 
+      cart.add_items(item1, item2, item3)
+    
+      expect(cart.items).to include(item1, item2, item3) 
+    
+    end
+    
+    it "- remove items from itself" 
+      
   end
+  
+  
+  
+
+  it "- counts items in itself"
+  it "- places order with all added items"
+  it "- clear the cart after the order has been placed"
+  
   
 end

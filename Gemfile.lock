@@ -22,11 +22,11 @@ GEM
     rspec-support (3.4.1)
 
 PLATFORMS
-  x86-mingw32
+  ruby
 
 DEPENDENCIES
   pony (= 1.4)
   rspec
 
 BUNDLED WITH
-   1.11.2
+   1.10.6
