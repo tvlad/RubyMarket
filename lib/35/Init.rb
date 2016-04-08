@@ -8,7 +8,7 @@ require_relative "Cart"
 require_relative "Order"
 
 @items = []
-@items << RealItem.new("Folk", weight:10, price:100)
+@items << RealItem.new("Folk", weight: "2", price: 100)
 #@items << RealItem.new("Spoon", weight: 12, price: 110)
 #@items << RealItem.new("Dish", :weight => 14, :price => 250)
 @items << VirtualIem.new("Book", price: 120)
